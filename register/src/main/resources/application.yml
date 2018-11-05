@@ -1,0 +1,16 @@
+app:
+  env: #env#
+
+server:
+  port: #port#
+
+spring:
+  application:
+    name: register
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false

@@ -1,0 +1,22 @@
+app:
+  env: #env#
+
+server:
+  port: #port#
+
+spring:
+  application:
+    name: provider
+
+eureka:
+  instance:
+    hostname: localhost
+#    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: #eureka.url#
+
+
